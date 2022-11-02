@@ -18,4 +18,26 @@ public void  pesquisar (long chave){
                 }
         }
 }
+public void imprimir(){
+	for (int i = 0; i<nElementos-1; i++){
+        	System.out.println(vetor[i] + " ");
+        }
+}
+public boolean apagar (long elemento){
+	int j;
+	for (j = 0; j < nElementos; j++){
+		if (elemento == vetor[j]){
+			break;
+		}
+	}
+	if (j == nElementos){
+		return false;
+	}else{
+		for (int k = j; k < nElementos; k++){ 
+			vetor[k] = vetor[k + 1];
+		}
+		nElementos--; 
+		return true;
+	}
+}
 }
