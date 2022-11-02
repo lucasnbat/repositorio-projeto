@@ -66,5 +66,4 @@ class VetorXApp{
 }
 }
 
-//melhorar para gettamanho
-//fazer a juncao dos commits com rebase
+
